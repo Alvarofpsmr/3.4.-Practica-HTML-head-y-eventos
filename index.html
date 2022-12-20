@@ -4,15 +4,10 @@
     <title>Practica bloque 3</title>
 <script>
  
-function funcion_nom(){
- var nom = document.getElementById("name").value
-
-}
-
-
 function funcion_surname(){
+    var nom = document.getElementById("name").value
     var cognom = document.getElementById("cognom").value
-    alert("Hola " + nom + cognom + ".")
+    alert("Hola " + nom + " " + cognom + ".")
 }
 
 
@@ -21,7 +16,7 @@ function funcion_surname(){
 
 
 </head>
-<body onload="funcion_nom()">
+<body>
     
   Introdueix el teu nombre: <input type="text" id="name">
   Introdueix el teu cognom: <input type="text" id="cognom" onblur="funcion_surname()">
