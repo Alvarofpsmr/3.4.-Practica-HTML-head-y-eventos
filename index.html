@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Onblur</title>
+    <title>Practica bloque 3</title>
 <script>
+ 
 function funcion_nom(){
-    var nom = document.getElementById("name").value;
+ var nom = document.getElementById("name").value
+
 }
-function funcion_edat(){
-    var edat = document.getElementById("age").value;
-}
-function funcion_direccio(){
-    var direccio = document.getElementById("adress").value;
-    alert("Hola " + nom + ", ja se que tens " + edat + " anys, i vius a " + direccio + ", ja ja ja.")
+
+
+function funcion_surname(){
+    var cognom = document.getElementById("cognom").value
+    alert("Hola " + nom + cognom + ".")
 }
 
 
@@ -20,10 +21,10 @@ function funcion_direccio(){
 
 
 </head>
-<body>
-  Introduce tu nombre: <input type="text" id="name">
-  Introduce tu edad: <input type="text" id="age"> 
-  Introduce tu direccion: <input type="text" id="adress" onblur="funcion_direccio()">
+<body onload="funcion_nom()">
+    
+  Introdueix el teu nombre: <input type="text" id="name">
+  Introdueix el teu cognom: <input type="text" id="cognom" onblur="funcion_surname()">
 
 </body>
 </html>
